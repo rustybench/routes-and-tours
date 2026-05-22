@@ -433,7 +433,7 @@ img { max-width: 100%; display: block; object-fit: cover; filter: sepia(0.2) con
 }
 
 /* FAQ column */
-.info-faq-column { width: 100%; }
+.info-faq-column { min-height: 6rem; }
 
 .faq-accordion {
   display: flex;
@@ -464,7 +464,7 @@ img { max-width: 100%; display: block; object-fit: cover; filter: sepia(0.2) con
   font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   color: var(--text-primary);
 }
 
