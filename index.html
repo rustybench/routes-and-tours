@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yorgos | Evia Walking Tours (V2)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot hidden-mobile" id="cursorDot"></div>
+    <div class="cursor-outline hidden-mobile" id="cursorOutline"></div>
+
+    <!-- Scroll Trail -->
+    <div class="scroll-trail hidden-mobile">
+      <div class="scroll-tracker" id="scrollTracker">✦</div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#" class="logo">Yorgos.</a>
+        <div class="nav-links">
+          <a href="#tours">Walks</a>
+          <a href="#about">Guide</a>
+          <a href="#faq">Info</a>
+          <a href="#contact" class="nav-btn">Get in touch</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <a href="#tours">Walks</a>
+      <a href="#about">Guide</a>
+      <a href="#faq">Info</a>
+      <a href="#contact">Get in touch</a>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero-editorial">
+      <div class="hero-content fade-up">
+        <span class="eyebrow">Evia, Greece</span>
+        <h1>Walk the <br/><em>wild</em> paths.</h1>
+        <p>I guide small groups and private expeditions through landscapes that demand to be felt. No crowds, no rushed itineraries—just good trails and the rhythm of the island.</p>
+        <a href="#tours" class="btn">Explore the Routes</a>
+      </div>
+      <div class="hero-visual fade-up delay-1">
+        <div class="hero-badge">
+          <svg viewBox="0 0 100 100" width="100%" height="100%">
+            <path id="badgePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" />
+            <text font-family="var(--font-mono)" font-size="11.5" font-weight="700" fill="currentColor">
+              <textPath href="#badgePath" startOffset="0%">LOCAL GUIDE • SMALL GROUPS • </textPath>
+            </text>
+          </svg>
+          <div class="badge-icon">✦</div>
+        </div>
+        <div class="hero-img-frame">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&fm=webp&q=80" alt="Evia landscapes" class="hero-img" fetchpriority="high" />
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1000&fm=webp&q=80" alt="Yorgos" loading="lazy" />
+        </div>
+        <div class="about-content reveal delay-1">
+          <h2>"Walking is the only way to <em>truly</em> understand a place."</h2>
+          <p>I’ve grown up mapping the wild contours of Evia under my boots. This island hides ancient gorges, cedar-scented forests, and dramatic coastlines that most guidebooks miss. My mission is to show you the Evia that locals keep secret.</p>
+          <p class="signature">Yorgos, Local Guide</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tours -->
+    <section id="tours" class="tours-section">
+      <div class="section-header text-center reveal">
+        <h2>What We'll <em>Walk</em></h2>
+        <p>Signature routes, taken at your pace.</p>
+      </div>
+
+      <div class="tour-row">
+        <div class="tour-text reveal left">
+          <div class="tour-meta">
+            <span class="tag">Moderate</span>
+            <span class="time">4 hrs</span>
+          </div>
+          <h3><span class="tour-number">01.</span> Coastal Evia Trail</h3>
+          <p>Dramatic sea cliffs, hidden coves, and the heavy scent of wild thyme on the breeze. We trace ancient shepherds' paths perched high above the azure Aegean, pausing for a revitalizing swim in a secret bay.</p>
+          <a href="#contact" class="link-btn">Book this walk &rarr;</a>
+        </div>
+        <div class="tour-image reveal right delay-1">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1000&fm=webp&q=80" alt="Coast" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="tour-row reverse">
+        <div class="tour-text reveal right">
+          <div class="tour-meta">
+            <span class="tag">Challenging</span>
+            <span class="time">6 hrs</span>
+          </div>
+          <h3><span class="tour-number">02.</span> Forest & Gorge Loop</h3>
+          <p>A dense fir forest that drops into an untamed river gorge. This is Evia's best-kept secret—a route involving rock scrambling and glacial river crossings, designed for true adventure.</p>
+          <a href="#contact" class="link-btn">Book this walk &rarr;</a>
+        </div>
+        <div class="tour-image reveal left delay-1">
+          <img src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=1000&fm=webp&q=80" alt="Forest" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="tour-row">
+        <div class="tour-text reveal left">
+          <div class="tour-meta">
+            <span class="tag">Easy</span>
+            <span class="time">3 hrs</span>
+          </div>
+          <h3><span class="tour-number">03.</span> Village Paths of the Interior</h3>
+          <p>Centuries-old cobblestone paths weaving between forgotten mountain villages. We reward our efforts at a traditional taverna, sharing plates of wild greens and artisanal local cheese.</p>
+          <a href="#contact" class="link-btn">Book this walk &rarr;</a>
+        </div>
+        <div class="tour-image reveal right delay-1">
+          <img src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=1000&fm=webp&q=80" alt="Village" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-header text-center reveal">
+        <h2>Guest <em>Remarks</em></h2>
+        <p>Words from those who walked the paths.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p class="quote">"Yorgos showed us a side of Evia we never would have found on our own. The forest gorge walk was the absolute highlight of our trip to Greece."</p>
+          <p class="author">&mdash; Sarah & Tom<span>UK</span></p>
+        </div>
+        <div class="testimonial-card reveal delay-1">
+          <p class="quote">"An unforgettable day. Yorgos's deep knowledge of the local history and botany added so much context to the stunning coastal trails. Highly recommended."</p>
+          <p class="author">&mdash; Marc P.<span>France</span></p>
+        </div>
+        <div class="testimonial-card reveal delay-2">
+          <p class="quote">"Perfect pacing, breathtaking views, and the absolute best local cheese at the end! The village paths walk felt like stepping back in time."</p>
+          <p class="author">&mdash; Elena & Family<span>USA</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery-collage">
+      <div class="section-header text-center reveal">
+        <h2>Moments on the <em>Trail</em></h2>
+      </div>
+      <div class="collage-wrapper">
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&fm=webp&q=80" class="c-img c-img-1 reveal" alt="Coast" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=800&fm=webp&q=80" class="c-img c-img-2 reveal delay-1" alt="Forest" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=800&fm=webp&q=80" class="c-img c-img-3 reveal delay-2" alt="Village" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1473042904451-00171c69419d?w=800&fm=webp&q=80" class="c-img c-img-4 reveal delay-1" alt="Village" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&fm=webp&q=80" class="c-img c-img-5 reveal" alt="Trail" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Info Section: FAQ & Map -->
+    <section id="faq" class="info-section">
+      <div class="info-container">
+        <!-- FAQ Column -->
+        <div class="info-faq-column">
+          <div class="info-header reveal">
+            <h2>Common <em>Questions</em></h2>
+            <p>What you need to know before we walk.</p>
+          </div>
+          <div class="faq-accordion">
+            <details class="faq-item reveal" name="faq" open>
+              <summary>
+                <h3>What should I pack?</h3>
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-content">
+                <p>Sturdy hiking shoes, a hat, sun protection, and at least 2 liters of water. For gorge and coastal walks, I always recommend bringing a swimsuit.</p>
+              </div>
+            </details>
+            <details class="faq-item reveal delay-1" name="faq">
+              <summary>
+                <h3>Do I need to be an expert hiker?</h3>
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-content">
+                <p>Not at all. I offer routes for all levels, from easy village strolls to challenging scrambles. We'll pick a path that fits your experience.</p>
+              </div>
+            </details>
+            <details class="faq-item reveal" name="faq">
+              <summary>
+                <h3>How do we get to Evia?</h3>
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-content">
+                <p>Evia is connected to the mainland by two bridges at Chalkida (about a 1-hour drive from Athens). We can arrange a meeting point depending on the chosen route.</p>
+              </div>
+            </details>
+            <details class="faq-item reveal delay-1" name="faq">
+              <summary>
+                <h3>What if the weather is bad?</h3>
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-content">
+                <p>Safety comes first. If there's heavy rain or extreme heat, we'll either adjust the route to something shaded and safe, or reschedule entirely.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- Evia Info Column -->
+        <div class="info-evia-column reveal delay-1">
+          <div class="info-header" style="margin-bottom: 2rem;">
+            <h2>About <em>Evia</em></h2>
+            <p>The island of two faces.</p>
+          </div>
+          <div class="evia-info-content">
+            <p style="margin-bottom: 1.5rem; line-height: 1.6; font-family: var(--font-serif); font-size: 1.1rem; color: var(--text-primary);">Despite being Greece's second-largest island, Evia remains fiercely independent and untamed by mass tourism. It is an island of dramatic dualities: rugged alpine mountains plunge violently into the deep blue Aegean in the east, while the west coast yields to calm gulf waters and gentle, rolling foothills.</p>
+            <p style="margin-bottom: 2rem; line-height: 1.6; font-family: var(--font-serif); font-size: 1.1rem; color: var(--text-primary);">From the ancient petrified forest to the cascading waterfalls of Drimona and the alpine lakes of Mount Dirfys, every trail tells a different story. Just an hour's drive from Athens, yet a world away.</p>
+            
+            <div class="evia-stats" style="display: flex; flex-direction: column; gap: 1rem; border-top: 1px solid var(--text-primary); padding-top: 2rem;">
+              <div class="stat-row" style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-family: var(--font-mono); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); min-width: 100px;">Terrain</span>
+                <span style="font-family: var(--font-sans); color: var(--text-primary);">Alpine mountains, deep gorges, and wild Aegean coastline.</span>
+              </div>
+              <div class="stat-row" style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-family: var(--font-mono); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); min-width: 100px;">Highlights</span>
+                <span style="font-family: var(--font-sans); color: var(--text-primary);">Mt. Dirfys, Dimosari Gorge, hidden pristine beaches.</span>
+              </div>
+              <div class="stat-row" style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-family: var(--font-mono); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); min-width: 100px;">Vibe</span>
+                <span style="font-family: var(--font-sans); color: var(--text-primary);">Untamed, authentic, and traditional.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="dark-footer">
+      <div class="footer-top reveal">
+        <div class="footer-text">
+          <h2>Let's plan your <em>route</em>.</h2>
+          <p>I run walks from spring through autumn. Small groups, private tours, and custom routes. Let me know what you're looking for.</p>
+          
+          <div class="contact-methods">
+            <a href="tel:+306900000000" class="c-link">
+              <span>WhatsApp</span><br/>+30 690 000 0000
+            </a>
+            <a href="#" class="c-link">
+              <span>Instagram</span><br/>@yorgos_walks
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-form">
+          <form class="minimal-form" id="contactForm">
+            <div class="input-row">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="input-row">
+              <input type="date" aria-label="Select Date" required />
+              <select aria-label="Number of People" required>
+                <option value="" disabled selected>Number of people</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4+">4+ People</option>
+              </select>
+            </div>
+            <textarea placeholder="Tell me about your ideal walk..." rows="3" required></textarea>
+            <button type="submit" class="btn btn-outline">Send Request</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Yorgos Guide</p>
+        <p>Evia, Greece</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>

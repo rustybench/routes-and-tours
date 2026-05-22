@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Yorgos Walking Tours",
+  "description": "Personal portfolio website for a local walking tour guide based in Evia, Greece.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
